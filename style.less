@@ -1,0 +1,306 @@
+// chrome
+progress::-webkit-progress-bar {
+  background: #706d6d;
+}
+progress::-webkit-progress-value {
+  background: black !important;
+}
+// firefox
+progress::-moz-progress-bar {
+  background: #706d6d !important;
+}
+progress::-moz-progress-value {
+  background: black !important;
+}
+// safari
+progress[value]::-webkit-progress-bar {
+  background-color: #706d6d;
+}
+progress[value] {
+  -webkit-appearance: none;
+}
+progress[value]::-webkit-progress-value {
+  background-color: black;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  line-height: 1.6;
+  font-family: "lato", sans-serif;
+  color: #333;
+
+  h1,
+  h2 {
+    margin: 10px 0;
+    line-height: 1.2;
+  }
+  p {
+    margin: 10px 0;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .card {
+    max-width: 1100px;
+    margin: 0 auto;
+    background-image: url("./img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .left {
+      background-color: pink;
+      margin: 30px;
+      .image {
+        width: 200px;
+        height: auto;
+
+        img {
+          border: 5px #fff solid;
+        }
+      }
+
+      .showcase {
+        .container {
+          .information {
+            width: 350px;
+            line-height: 2.5;
+          }
+        }
+
+        .progress {
+          width: 350px;
+
+          h2 {
+            font-weight: 400;
+          }
+
+          .grid {
+            gap: 20px;
+          }
+
+          td {
+            font-weight: 300;
+            width: 200px;
+
+            progress {
+              border: none;
+              height: 0.5rem;
+              width: 60%;
+            }
+          }
+        }
+      }
+    }
+
+    .right {
+      .header {
+        width: 300px;
+        overflow: auto;
+        margin: 70px auto;
+
+        div {
+          padding: 10px;
+          margin: 10px 0;
+
+          h1 {
+            font-weight: 700;
+            font-size: 40px;
+            margin: 0;
+          }
+
+          h2 {
+            font-weight: 300;
+            font-size: 20px;
+            text-decoration: underline;
+            margin: 0;
+          }
+        }
+      }
+
+      .grid {
+        gap: 40px;
+      }
+
+      .content {
+        margin: 100px 0;
+        .tieuDe {
+          font-size: 15px;
+          background-color: rgba(0, 0, 0, 0.2);
+          padding: 5px;
+          font-weight: bold;
+        }
+
+        i {
+          position: relative;
+          right: 35px;
+        }
+
+        .date {
+          margin-left: -30px;
+        }
+        .purpose {
+          padding: 0 70px;
+          margin: 0 20px;
+        }
+
+        .study {
+          padding: 0 70px;
+          margin: 0 20px;
+        }
+
+        .experiment {
+          padding: 0 70px;
+          margin: 0 20px;
+        }
+
+        .hobby {
+          padding: 0 70px;
+          margin: 0 20px;
+        }
+      }
+    }
+  }
+}
+
+// Laptop or screen
+@media (min-width: 769px) {
+  body {
+    .left {
+      .image {
+        position: relative;
+        top: 10px;
+        left: 100px;
+        margin: 10px 0;
+      }
+    }
+  }
+}
+
+// Tablets & underneath
+@media (max-width: 768px) {
+  body {
+    .left {
+      width: 300px;
+
+      .image {
+        position: relative;
+        top: 10px;
+        left: 50px;
+        margin: 10px 0;
+      }
+
+      h2 {
+        font-size: 15px;
+        margin: 5px 10px;
+      }
+
+      .information {
+        font-size: 12px;
+        max-width: 250px;
+      }
+
+      .progress {
+        font-size: 12px;
+        max-width: 250px;
+      }
+    }
+
+    .right {
+      .content {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+// Mobile
+@media (max-width: 500px) {
+  body {
+    .card {
+      background-size: cover;
+      .left {
+        width: 180px;
+
+        .image {
+          position: relative;
+          left: -10px;
+        }
+
+        .showcase {
+          .container {
+            padding: 20px;
+            margin: 0;
+          }
+
+          h2 {
+            font-size: 12px;
+          }
+
+          .information {
+            max-width: 150px;
+            font-size: 10px;
+          }
+
+          .progress {
+            max-width: 150px;
+            font-size: 10px;
+
+            progress {
+              border: none;
+              height: 0.5rem;
+              width: auto;
+            }
+            td {
+              width: 100px;
+            }
+          }
+        }
+      }
+
+      .right {
+        .header {
+          width: 150px;
+          margin: 70px 0;
+          overflow: visible;
+          div {
+            width: 150px;
+            margin: 0;
+            padding: 0 10px;
+            h1 {
+              font-size: 20px;
+            }
+            h2 {
+              font-size: 10px;
+            }
+          }
+        }
+
+        .content {
+          font-size: 10px;
+          .container {
+            width: 180px;
+            padding: 20px;
+            margin: 0;
+          }
+
+          .tieuDe {
+            font-size: 10px;
+          }
+
+          i {
+            right: 30px;
+          }
+          .date {
+            margin-left: -20px;
+          }
+        }
+      }
+    }
+  }
+}

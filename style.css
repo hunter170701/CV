@@ -1,0 +1,239 @@
+progress::-webkit-progress-bar {
+  background: #706d6d;
+}
+progress::-webkit-progress-value {
+  background: black !important;
+}
+progress::-moz-progress-bar {
+  background: #706d6d !important;
+}
+progress::-moz-progress-value {
+  background: black !important;
+}
+progress[value]::-webkit-progress-bar {
+  background-color: #706d6d;
+}
+progress[value] {
+  -webkit-appearance: none;
+}
+progress[value]::-webkit-progress-value {
+  background-color: black;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  line-height: 1.6;
+  font-family: "lato", sans-serif;
+  color: #333;
+}
+body h1,
+body h2 {
+  margin: 10px 0;
+  line-height: 1.2;
+}
+body p {
+  margin: 10px 0;
+}
+body img {
+  width: 100%;
+}
+body .card {
+  max-width: 1100px;
+  margin: 0 auto;
+  background-image: url("img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body .card .left {
+  background-color: pink;
+  margin: 30px;
+}
+body .card .left .image {
+  width: 200px;
+  height: auto;
+}
+body .card .left .image img {
+  border: 5px #fff solid;
+}
+body .card .left .showcase .container .information {
+  width: 350px;
+  line-height: 2.5;
+}
+body .card .left .showcase .progress {
+  width: 350px;
+}
+body .card .left .showcase .progress h2 {
+  font-weight: 400;
+}
+body .card .left .showcase .progress .grid {
+  gap: 20px;
+}
+body .card .left .showcase .progress td {
+  font-weight: 300;
+  width: 200px;
+}
+body .card .left .showcase .progress td progress {
+  border: none;
+  height: 0.5rem;
+  width: 60%;
+}
+body .card .right .header {
+  width: 300px;
+  overflow: auto;
+  margin: 70px auto;
+}
+body .card .right .header div {
+  padding: 10px;
+  margin: 10px 0;
+}
+body .card .right .header div h1 {
+  font-weight: 700;
+  font-size: 40px;
+  margin: 0;
+}
+body .card .right .header div h2 {
+  font-weight: 300;
+  font-size: 20px;
+  text-decoration: underline;
+  margin: 0;
+}
+body .card .right .grid {
+  gap: 40px;
+}
+body .card .right .content {
+  margin: 100px 0;
+}
+body .card .right .content .tieuDe {
+  font-size: 15px;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  font-weight: bold;
+}
+body .card .right .content i {
+  position: relative;
+  right: 35px;
+}
+body .card .right .content .date {
+  margin-left: -30px;
+}
+body .card .right .content .purpose {
+  padding: 0 70px;
+  margin: 0 20px;
+}
+body .card .right .content .study {
+  padding: 0 70px;
+  margin: 0 20px;
+}
+body .card .right .content .experiment {
+  padding: 0 70px;
+  margin: 0 20px;
+}
+body .card .right .content .hobby {
+  padding: 0 70px;
+  margin: 0 20px;
+}
+@media (min-width: 769px) {
+  body .left .image {
+    position: relative;
+    top: 10px;
+    left: 100px;
+    margin: 10px 0;
+  }
+}
+@media (max-width: 768px) {
+  body .left {
+    width: 300px;
+  }
+  body .left .image {
+    position: relative;
+    top: 10px;
+    left: 50px;
+    margin: 10px 0;
+  }
+  body .left h2 {
+    font-size: 15px;
+    margin: 5px 10px;
+  }
+  body .left .information {
+    font-size: 12px;
+    max-width: 250px;
+  }
+  body .left .progress {
+    font-size: 12px;
+    max-width: 250px;
+  }
+  body .right .content {
+    font-size: 15px;
+  }
+}
+@media (max-width: 500px) {
+  body .card {
+    background-size: cover;
+  }
+  body .card .left {
+    width: 180px;
+  }
+  body .card .left .image {
+    position: relative;
+    left: -10px;
+  }
+  body .card .left .showcase .container {
+    padding: 20px;
+    margin: 0;
+  }
+  body .card .left .showcase h2 {
+    font-size: 12px;
+  }
+  body .card .left .showcase .information {
+    max-width: 150px;
+    font-size: 10px;
+  }
+  body .card .left .showcase .progress {
+    max-width: 150px;
+    font-size: 10px;
+  }
+  body .card .left .showcase .progress progress {
+    border: none;
+    height: 0.5rem;
+    width: auto;
+  }
+  body .card .left .showcase .progress td {
+    width: 100px;
+  }
+  body .card .right .header {
+    width: 150px;
+    margin: 70px 0;
+    overflow: visible;
+  }
+  body .card .right .header div {
+    width: 150px;
+    margin: 0;
+    padding: 0 10px;
+  }
+  body .card .right .header div h1 {
+    font-size: 20px;
+  }
+  body .card .right .header div h2 {
+    font-size: 10px;
+  }
+  body .card .right .content {
+    font-size: 10px;
+  }
+  body .card .right .content .container {
+    width: 180px;
+    padding: 20px;
+    margin: 0;
+  }
+  body .card .right .content .tieuDe {
+    font-size: 10px;
+  }
+  body .card .right .content i {
+    right: 30px;
+  }
+  body .card .right .content .date {
+    margin-left: -20px;
+  }
+}
